@@ -12,6 +12,10 @@ repositories {
 
 def runeLiteVersion = 'latest.release'
 
+configurations {
+	thirdParty
+}
+
 dependencies {
 	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
 
@@ -23,6 +27,7 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 
 	implementation 'com.fazecast:jSerialComm:2.7.0'
+	thirdParty 'com.fazecast:jSerialComm:2.7.0'
 }
 
 group = 'dev.jpires'
