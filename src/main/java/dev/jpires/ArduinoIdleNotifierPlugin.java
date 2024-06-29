@@ -24,7 +24,7 @@ import static net.runelite.api.AnimationID.IDLE;
 @PluginDescriptor(
         name = "Arduino Idle Notifier",
         description = "Run a command on a connected arduino when the player goes into idle",
-        tags = {"arduino", "idle", "notifier"}
+        tags = {"arduino", "idle", "notifier", "alert"}
 )
 public class ArduinoIdleNotifierPlugin extends Plugin {
     private SerialPort serialPort;
