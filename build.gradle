@@ -21,9 +21,11 @@ dependencies {
 	testImplementation 'junit:junit:4.12'
 	testImplementation group: 'net.runelite', name:'client', version: runeLiteVersion
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
+
+	implementation 'com.fazecast:jSerialComm:2.7.0'
 }
 
-group = 'com.example'
+group = 'dev.jpires'
 version = '1.0-SNAPSHOT'
 
 tasks.withType(JavaCompile) {
